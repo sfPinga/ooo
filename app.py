@@ -23,11 +23,6 @@ import corwler
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('QQ8+L9F87bTZ3z6rIX4CthSmTuqDDTl/OMqUuRr12dpZfbubaTk6IWzfELP+U6jQSLmAWAI8ecVrmFPz6TqbweAW0AgyA4b1FAaFRItM1qOP+tuHd+JaEI8vpETWXlf9L+eY2YNAIgYWOxNu/T9IIwdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('a5d7949673d241494893f4172903c640')
-
-
-
 @app.route("/callback", methods=['POST'])
 def callback():
 
