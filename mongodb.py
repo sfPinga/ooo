@@ -12,14 +12,6 @@ from datetime import datetime
 import pandas as pd
 
 
-# db setting
-host = 'ds157923.mlab.com'
-port = '57923'
-username = urllib.parse.quote_plus('test2')
-password = urllib.parse.quote_plus('abc1234')
-# Authentication Database
-Authdb='test1234'
-
 def init_db():
     client = MongoClient('mongodb://%s:%s@%s:%s/%s?authMechanism=SCRAM-SHA-1'
                       % (username, password, host, port, Authdb))
